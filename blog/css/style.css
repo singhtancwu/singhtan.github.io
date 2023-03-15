@@ -47,5 +47,149 @@
 
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
+/* General setup */
 
+@font-face {
+    font-family: lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: josefinslab;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: robotoslab;
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: rozhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: ultra;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+nav {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: none;
+    font-family: opensans, sans-serif;
+    border-top: .125rem solid black;
+    border-bottom: .125rem solid black;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1.5rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 0.125rem;
+    font-weight: normal;
+    font-size: 1.75rem;
+    padding: 0.75rem;
+}
+
+.nav-links a:hover:not(.active) {
+    background-color: orange;
+}
+
+.nav-links li a.active {
+    text-decoration: line-through;
+    transform: rotate(-15deg);
+}
+
+h1 {
+    font-family: roboto, sans-serif;
+    font-size: 3.75rem;
+    margin: 1.125rem;
+    letter-spacing: 0.125rem;
+    text-align: center;
+}
+
+h1:nth-child(2) {
+    font-family: ultra, serif;
+    font-weight: bold;
+    background-color: blue;
+    padding: 1.125rem;
+}
+
+h2{
+    font-family: roboto, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.article-image {
+    float: left;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+}
+
+.subsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.125rem;
+}
+
+figcaption {
+    font-family: roboto, sans-serif;
+    background: peachpuff;
+    position: absolute;
+    padding: 0.5rem;
+    text-align: left;
+}
