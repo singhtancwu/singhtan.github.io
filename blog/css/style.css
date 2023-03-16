@@ -125,6 +125,7 @@ h2{
     font-size: 2rem;
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
+    clear: both;
 }
 
 h3{
@@ -137,6 +138,9 @@ h3{
 p {
     font-family: roboto, sans-serif;
     font-size: 1rem;
+    text-align: left;
+    margin: auto;
+    padding: auto;
 }
 
 h4{
@@ -157,6 +161,39 @@ h4{
 main {
     overflow:auto;
     min-width:45rem;
+    
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-selection {
+    overflow: auto;
+}
+
+.main-selection article{
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+}
+
+.main-selection aside {
+    float: right;
+    width: 30%;
+    margin: 0 1.5%;
+    border-left: 0.125rem solid black;
+    padding-left: 2rem;
+}
+
+.gray {
+    color: darkslategray;
+    font-size: 0.75rem;
+}
+
+footer {
     
 }
 
@@ -198,16 +235,24 @@ nav {
     transform: rotate(-15deg);
 }
 
-
-
-.article-image {
+.article-image{
     float: left;
+    width: 15%;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    margin-top: auto;
+    margin-bottom: 1.25rem;
+    padding: auto;
 }
-
 
 
 .subsection{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0.125rem;
+}
+
+.subsection > section {
+    flex: 1;
 }
