@@ -52,50 +52,34 @@
 @font-face {
     font-family: lato;
     src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: montserrat;
     src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: opensans;
     src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: roboto;
     src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: josefinslab;
     src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
-    font-size: normal;
-    font-weight: normal;
 }
 @font-face {
     font-family: robotoslab;
     src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: rozhaone;
     src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: ultra;
     src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-size: normal;
 }
 
 * {
@@ -110,6 +94,70 @@ body {
     margin: 1.5rem auto;
     width:90%;
     min-width:56.25rem;
+}
+
+/*typography*/
+h1 {
+    font-family: roboto, sans-serif;
+    font-size: 3.75rem;
+    letter-spacing: 0.0125rem;
+    text-align: center;
+    transform-origin: center;
+    transform: rotate(-10deg);
+    margin: 5rem;
+    font-weight: bold;
+    text-shadow: 0.0625rem 0.0625rem black;
+}
+
+.highlight {
+    font-family: ultra, serif;
+    color: azure;
+    font-weight: bold;
+    background-image: radial-gradient(blue, black);
+    padding: 1.125rem;
+    border-top-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+h2{
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+}
+
+h3{
+    font-family: roboto, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.0625rem;
+}
+
+p {
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+}
+
+h4{
+    font-family: ultra, serif;
+    font-size: 2.3rem;
+}
+
+.spans {
+    background-color: cornflowerblue;
+    border-top-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+    box-shadow: 0.25rem 0.25rem black;
+    padding: 1.125rem;
+}
+
+/*main*/
+
+main {
+    overflow:auto;
+    min-width:45rem;
+    
 }
 
 nav {
@@ -150,46 +198,16 @@ nav {
     transform: rotate(-15deg);
 }
 
-h1 {
-    font-family: roboto, sans-serif;
-    font-size: 3.75rem;
-    margin: 1.125rem;
-    letter-spacing: 0.125rem;
-    text-align: center;
-}
 
-h1:nth-child(2) {
-    font-family: ultra, serif;
-    font-weight: bold;
-    background-color: blue;
-    padding: 1.125rem;
-}
-
-h2{
-    font-family: roboto, sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-}
 
 .article-image {
     float: left;
 }
 
-p {
-    font-family: roboto, sans-serif;
-    font-size: 1rem;
-}
+
 
 .subsection{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.125rem;
-}
-
-figcaption {
-    font-family: roboto, sans-serif;
-    background: peachpuff;
-    position: absolute;
-    padding: 0.5rem;
-    text-align: left;
 }
