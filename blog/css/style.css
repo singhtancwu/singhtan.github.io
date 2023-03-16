@@ -139,7 +139,10 @@ p {
     font-family: roboto, sans-serif;
     font-size: 1rem;
     text-align: left;
-    margin: auto;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
     padding: auto;
 }
 
@@ -154,6 +157,10 @@ h4{
     border-bottom-right-radius: 1.125rem;
     box-shadow: 0.25rem 0.25rem black;
     padding: 1.125rem;
+}
+
+.spans a:link {
+    text-decoration: none;
 }
 
 /*main*/
@@ -190,11 +197,65 @@ img {
 
 .gray {
     color: darkslategray;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 footer {
-    
+    margin-top: 2rem;
+}
+
+.cc {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.cc2 {
+    float: right;
+    width: 70%;
+    margin: 0 1.5%;
+}
+
+.expand {
+    font-size: 0.125rem;
+}
+
+.expand a:link {
+    text-decoration: none;
+}
+
+time {
+    margin-top: 2rem
+}
+
+
+
+.article-image{
+    float: left;
+    width: 17%;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    margin-top: auto;
+    margin-bottom: 1.25rem;
+    padding: auto;
+}
+
+
+.subsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.125rem;
+    margin-top: 2rem;
+}
+
+.subsection > section {
+    flex: 1;
+}
+
+.pictures {
+    background-color: burlywood;
+    padding: 0.25rem;
 }
 
 nav {
@@ -226,33 +287,16 @@ nav {
     padding: 0.75rem;
 }
 
-.nav-links a:hover:not(.active) {
+nav a:hover {
     background-color: orange;
+    transform: rotate(-5deg);
 }
 
-.nav-links li a.active {
+.nav-links li:nth-child(2) {
+    transform: rotate(-5deg);
     text-decoration: line-through;
-    transform: rotate(-15deg);
-}
-
-.article-image{
-    float: left;
-    width: 15%;
-    height: auto;
-    margin-right: 1rem;
-    margin-left: 0rem;
-    margin-top: auto;
-    margin-bottom: 1.25rem;
-    padding: auto;
 }
 
 
-.subsection{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.125rem;
-}
 
-.subsection > section {
-    flex: 1;
-}
+
